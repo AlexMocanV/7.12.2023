@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int r,h;
+    float arielcilindru,arietcilindru,vcilindru;
+    float arielcon,arietcon,vcon;
+    cin>>h>>r;
+    arielcilindru=2*3.14*r*h;
+    arietcilindru=arielcilindru+2*r*r*3.14;
+    vcilindru=3.14*r*r*h;
+    cout<<arielcilindru<<" "<<arietcilindru<<" "<<vcilindru<<"\n";
+    arielcon=3.14*r*h;
+    arietcon=arielcon+3.14*r*r;
+    vcon=3.14*r*r*h/3;
+    cout<<arielcon<<" "<<arietcon<<" "<<vcon;
+    return 0;
+}
