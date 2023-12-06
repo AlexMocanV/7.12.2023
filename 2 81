@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float n,x,y;
+    cin>>n>>y>>x;
+    if(n>=x+y or x>=n+y or y>=n+x or y<=0 or x<=0 or n<=0)
+    {
+        cout<<"nu";
+    }
+    else
+    {
+        float a,p;
+        p=n+x+y/2;
+        a=sqrt(p*(p-n)*(p-x)*(p-y));
+        cout<<a/p<<" "<<(n*x*y/4)/a;
+        cout<<" "<<a/(p-n)<<" "<<a/(p-x)<<" "<<a/(p-y);
+        cout<<" "<<a/n*2<<" "<<a/p*2<<" "<<a/x*2;
+    }
+    
+    
+    
+    return 0;
+}
